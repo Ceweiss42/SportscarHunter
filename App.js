@@ -6,6 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <Text>This is a from the Macbook!</Text>
+      <Text>This is from the Desktop!</Text>
       <StatusBar style="auto" />
     </View>
   );
