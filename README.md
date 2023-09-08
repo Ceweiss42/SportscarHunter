@@ -18,3 +18,10 @@ React is our front-end library. If you are solely working on the server, do not 
 
 # Next steps
 With the necessary packages installed, try running the project! Make sure all changes are committed to GitHub first!. Then, just navigate to the website on your phone! The link can be found here: (link needs to be created first)
+
+# How to build
+
+Deploying to the site is fairly easy, as long as you have the required dependencies... <br>
+First, what you want to do is commit your changes to github.
+Then, you can run "npm run deploy"
+This will deploy the site to the website, as long as you log in!
