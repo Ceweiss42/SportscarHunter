@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/SportscarHunter/static/css/main.073c9b0a.css",
-    "main.js": "/SportscarHunter/static/js/main.9f01c60d.js",
+    "main.css": "/SportscarHunter/static/css/main.eefd05cf.css",
+    "main.js": "/SportscarHunter/static/js/main.5b4ff817.js",
     "static/js/787.28cb0dcd.chunk.js": "/SportscarHunter/static/js/787.28cb0dcd.chunk.js",
     "service-worker.js": "/SportscarHunter/service-worker.js",
     "static/media/logo.svg": "/SportscarHunter/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
     "index.html": "/SportscarHunter/index.html",
-    "main.073c9b0a.css.map": "/SportscarHunter/static/css/main.073c9b0a.css.map",
-    "main.9f01c60d.js.map": "/SportscarHunter/static/js/main.9f01c60d.js.map",
+    "main.eefd05cf.css.map": "/SportscarHunter/static/css/main.eefd05cf.css.map",
+    "main.5b4ff817.js.map": "/SportscarHunter/static/js/main.5b4ff817.js.map",
     "787.28cb0dcd.chunk.js.map": "/SportscarHunter/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.9f01c60d.js"
+    "static/css/main.eefd05cf.css",
+    "static/js/main.5b4ff817.js"
   ]
 }
