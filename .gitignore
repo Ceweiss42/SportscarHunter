@@ -403,4 +403,4 @@ package.json
 package.json
 
 # ignore build folder
-*.build
+build/
