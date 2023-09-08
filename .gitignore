@@ -403,4 +403,6 @@ package.json
 package.json
 
 # ignore build folder
-build/
+build/*
+build/asset-manifest.json
+build/index.html
