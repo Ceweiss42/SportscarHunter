@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SportscarHunter/static/css/main.3364f034.css",
+    "main.css": "/SportscarHunter/static/css/main.63a3a977.css",
     "main.js": "/SportscarHunter/static/js/main.1f2d2131.js",
     "static/js/787.28cb0dcd.chunk.js": "/SportscarHunter/static/js/787.28cb0dcd.chunk.js",
     "static/media/testa_rossa.jpeg": "/SportscarHunter/static/media/testa_rossa.16b757903f6a472fe035.jpeg",
@@ -10,12 +10,12 @@
     "static/media/ferrari.png": "/SportscarHunter/static/media/ferrari.4023a0fd8b0bc27f4c8c.png",
     "static/media/logo.svg": "/SportscarHunter/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
     "index.html": "/SportscarHunter/index.html",
-    "main.3364f034.css.map": "/SportscarHunter/static/css/main.3364f034.css.map",
+    "main.63a3a977.css.map": "/SportscarHunter/static/css/main.63a3a977.css.map",
     "main.1f2d2131.js.map": "/SportscarHunter/static/js/main.1f2d2131.js.map",
     "787.28cb0dcd.chunk.js.map": "/SportscarHunter/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3364f034.css",
+    "static/css/main.63a3a977.css",
     "static/js/main.1f2d2131.js"
   ]
 }
