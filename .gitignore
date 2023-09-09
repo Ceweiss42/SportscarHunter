@@ -407,3 +407,11 @@ build/*
 build/asset-manifest.json
 build/index.html
 build/asset-manifest.json
+build/asset-manifest.json
+build/index.html
+build/manifest.json
+build/service-worker.js
+build/service-worker.js.LICENSE.txt
+build/service-worker.js.map
+build/static/js/787.28cb0dcd.chunk.js
+build/static/js/787.28cb0dcd.chunk.js.map
