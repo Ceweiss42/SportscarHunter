@@ -59,6 +59,11 @@ export default function Card  ({make, model, generation, rarity})
                 <div>
                     <img className="cardImage" src={Testa}/>
                 </div>
+                <div className="cardInfo">
+                    <p>HP: 190</p>
+                    <p>Weight: 1000 lbs</p>
+                    <p> 0-60: 8s</p>
+                </div>
                 
             </div>
         </div>

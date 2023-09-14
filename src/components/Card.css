@@ -10,6 +10,7 @@
     position: relative;
     border-radius: 9px;
     border: 8px solid;
+    z-index: -1;
     
 }
 
@@ -140,6 +141,16 @@
 	100% {
 		opacity: 1;
 	}
+}
+
+.cardInfo {
+    padding: 5px;
+    margin: 5px;
+    width: 90%;
+    height: 30%;
+    border: 5px solid red;
+    border-radius: 9px;
+    z-index: 1;
 }
 
 
