@@ -5,9 +5,13 @@ import Card from './components/Card';
 import Webcam from 'react-webcam';
 
 function App() {
+
+  const vc = {
+    facingMode: { exact: "environment" }
+  }
   return (
     <div className="App">
-      <Webcam/>
+      <Webcam videoConstraints={vc}/>
       <Card make="Ferrari" rarity={100} model="250 Testa Rossa" generation="1957-1961"/>
     </div>
   );
