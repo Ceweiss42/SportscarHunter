@@ -21,12 +21,15 @@ def formatName(name):
 
 def generate():
     with open("AutoDex-AI/carNames.txt", "r") as file:
-        min = 0
-        max = 70
+        min = 210
+        max = 490
         for line in file.readlines()[min:max]:
             folder = "/media/cameron/76E8-CACF/" + line.replace("\n", "")
-            os.mkdir(folder)
-            getImages(folder, "/media/cameron/76E8-CACF/")
+            try:
+                os.mkdir(folder)
+                getImages(folder, "/media/cameron/76E8-CACF/")
+            except FileExistsError as e:
+                print("Folder already created. Moving on from car ", line)
 
 def getImages(folder, master):
     query = folder[len(master):]
@@ -40,9 +43,6 @@ def getImages(folder, master):
 
         google_crawler.crawl(keyword=query + " exterior", max_num=100)
 
-
-
-    
 
 
 if __name__ == "__main__":
