@@ -1,20 +1,24 @@
-from icrawler.builtin import GoogleImageCrawler
 import os
 
-keyword = "cat"  # Replace with your desired search keyword
-max_num = 100  # Replace with the maximum number of images you want to download
+parent_folder = '/media/cameron/76E8-CACF'  # Replace this with the path to your parent folder
 
-# Specify the absolute path to the desktop/testing folder
-root_dir = os.path.expanduser("~/Desktop/testing")
+# Define a function to recursively count items in a folder and its subfolders
+def count_items_in_folder(folder):
+    count = 0
+    for item in os.listdir(folder):
+        item_path = os.path.join(folder, item)
+        if os.path.isfile(item_path) or os.path.isdir(item_path):
+            if os.path.isdir(item_path):
+                count += count_items_in_folder(item_path)
+            count += 1
 
-# Create the directory if it doesn't exist
-if not os.path.exists(root_dir):
-    os.makedirs(root_dir)
+    # Get the name of the current folder (relative to the parent folder)
+    folder_name = os.path.relpath(folder, parent_folder)
+    
+    # Print the count for the current folder
+    if count < 50:
+        print(f'{folder_name}: {count}')
 
-google_crawler = GoogleImageCrawler(
-    parser_threads=2, 
-    downloader_threads=4,
-    storage={"root_dir": root_dir}
-)
+    return count
 
-google_crawler.crawl(keyword=keyword, max_num=max_num)
+count_items_in_folder(parent_folder)

@@ -20,9 +20,9 @@ def formatName(name):
     return out
 
 def generate():
-    with open("AutoDex-AI/carNames.txt", "r") as file:
-        min = 210
-        max = 490
+    with open("/home/cameron/Desktop/Programming/Autodex/AI/carNames.txt", "r") as file:
+        min = 490
+        max = 1050
         for line in file.readlines()[min:max]:
             folder = "/media/cameron/76E8-CACF/" + line.replace("\n", "")
             try:

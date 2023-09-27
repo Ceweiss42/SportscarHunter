@@ -16,9 +16,32 @@ function App() {
   const capture = useCallback(
     () => {
       setImageSource(webcamRef.current.getScreenshot());
+      console.log(imageSrc);
+      fetch("https://c927-107-185-101-105.ngrok-free.app/testing")
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.json();
+  })
+  .then(data => {
+    // Log the entire data object to the console for debugging
+    console.log(data);
+    
+    // Check if the "message" field exists in the data
+    if (data.hasOwnProperty("message")) {
+      setImageSource(data.message);
+    } else {
+      console.error("The 'message' field is missing in the JSON response.");
+    }
+  })
+  .catch(error => {
+    console.error("There was a problem with the fetch operation:", error);
+  });
     },
     [webcamRef]
   );
+
 
 
   return (

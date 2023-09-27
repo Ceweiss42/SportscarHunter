@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/SportscarHunter/static/css/main.eefd05cf.css",
-    "main.js": "/SportscarHunter/static/js/main.3bc99143.js",
+    "main.css": "/SportscarHunter/static/css/main.c120a69c.css",
+    "main.js": "/SportscarHunter/static/js/main.796f369c.js",
     "static/js/787.28cb0dcd.chunk.js": "/SportscarHunter/static/js/787.28cb0dcd.chunk.js",
+    "static/media/testa_rossa.jpeg": "/SportscarHunter/static/media/testa_rossa.16b757903f6a472fe035.jpeg",
+    "static/media/bokeh.jpg": "/SportscarHunter/static/media/bokeh.eb33ce23ab8e73d9594a.jpg",
     "service-worker.js": "/SportscarHunter/service-worker.js",
+    "static/media/ford.png": "/SportscarHunter/static/media/ford.961266a37860ab780051.png",
+    "static/media/ferrari.png": "/SportscarHunter/static/media/ferrari.4023a0fd8b0bc27f4c8c.png",
     "static/media/logo.svg": "/SportscarHunter/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
     "index.html": "/SportscarHunter/index.html",
-    "main.eefd05cf.css.map": "/SportscarHunter/static/css/main.eefd05cf.css.map",
-    "main.3bc99143.js.map": "/SportscarHunter/static/js/main.3bc99143.js.map",
+    "main.c120a69c.css.map": "/SportscarHunter/static/css/main.c120a69c.css.map",
+    "main.796f369c.js.map": "/SportscarHunter/static/js/main.796f369c.js.map",
     "787.28cb0dcd.chunk.js.map": "/SportscarHunter/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eefd05cf.css",
-    "static/js/main.3bc99143.js"
+    "static/css/main.c120a69c.css",
+    "static/js/main.796f369c.js"
   ]
 }
