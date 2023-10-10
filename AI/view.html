@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Viewer</title>
+</head>
+<body>
+    <div id="image-container">
+        <img id="image" src="" alt="Image">
+        <p id="error-message">Cannot load</p>
+    </div>
+    <button id="next-button">Next</button>
+
+    <script>
+        const imageContainer = document.getElementById("image-container");
+        const imageElement = document.getElementById("image");
+        const errorMessage = document.getElementById("error-message");
+        const nextButton = document.getElementById("next-button");
+        let currentIndex = 0;
+        let imageLinks = [];
+
+        // Load image links from the text file
+        fetch("output.txt")
+            .then(response => response.text())
+            .then(data => {
+                imageLinks = data.trim().split("\n").map(link => `/proxyImage?url=${encodeURIComponent(link)}`);
+                showImage(currentIndex);
+            })
+            .catch(error => console.error("Error loading image links:", error));
+
+        // Function to display the image at the given index
+        function showImage(index) {
+            if (index < 0 || index >= imageLinks.length) {
+                errorMessage.style.display = "block";
+                imageElement.style.display = "none";
+            } else {
+                errorMessage.style.display = "none";
+                imageElement.style.display = "block";
+                imageElement.src = imageLinks[index];
+            }
+        }
+
+        // Event listener for the "Next" button
+        nextButton.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % imageLinks.length;
+            showImage(currentIndex);
+        });
+    </script>
+</body>
+</html>
